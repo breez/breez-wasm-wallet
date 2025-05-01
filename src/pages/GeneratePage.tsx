@@ -25,7 +25,7 @@ const GeneratePage: React.FC<GeneratePageProps> = ({
     const generateMnemonic = async () => {
       try {
         // Generate a random mnemonic (128-256 bits of entropy)
-        const newMnemonic = bip39.generateMnemonic(128); // 24 words
+        const newMnemonic = bip39.generateMnemonic(256); // 24 words
         setMnemonic(newMnemonic);
       } catch (error) {
         console.error('Failed to generate mnemonic:', error);
